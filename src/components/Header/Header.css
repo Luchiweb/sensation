@@ -1,0 +1,30 @@
+@import "../../css/variables.css";
+
+.header {
+  background-color: var(--main-bg);
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: var(--sensation-black);
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  line-height: 14px;
+  transition: color 0.2s ease;
+}
+
+@media (hover: hover) {
+  .navbar a:hover {
+    color: var(--sensation-yellow);
+  }
+}

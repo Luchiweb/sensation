@@ -1,0 +1,15 @@
+@import "../../css/variables.css";
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 120px;
+  background: var(--sensation-yellow);
+  border: 1px solid var(--sensation-yellow);
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: var(--main-bg);
+}
