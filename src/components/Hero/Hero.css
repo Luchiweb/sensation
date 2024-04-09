@@ -16,12 +16,11 @@
 }
 
 .hero-container {
-  gap: 3em;
+  gap: 4rem;
 }
 
-.hero-text,
 .hero-buttons {
-  gap: 0.5em;
+  gap: 1.5rem;
 }
 
 .hero video {

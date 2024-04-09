@@ -1,6 +1,6 @@
 import './Hero.css';
 
-import videoBG from '../../assets/y2mate.is - 01--KAFxe8rdzY-720p-1712579543.mp4';
+import videoBG from '../../assets/hero.mp4';
 import Button from '../Button/Button';
 
 function Hero() {
@@ -17,7 +17,7 @@ function Hero() {
           </p>
         </div>
         <div className="hero-buttons">
-          <Button link="#" text="Preserve wedding memories" />
+          <Button link="#" text="Preserve wedding memories" size="large" />
           <a href="#" className="link">
             Not from Canada? See other regions
           </a>

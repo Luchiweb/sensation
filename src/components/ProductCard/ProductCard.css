@@ -1,0 +1,29 @@
+@import "../../css/variables.css";
+
+.productCard a {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg);
+  transition: background-color 0.2s ease;
+}
+
+.productCard figcaption {
+  display: none;
+}
+
+.productCard-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 14px;
+}
+
+.productCard-title {
+  color: var(--sensation-black);
+}
+
+@media (hover: hover) {
+  .productCard a:hover {
+    background-color: var(--secondary-bg);
+  }
+}

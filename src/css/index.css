@@ -148,15 +148,15 @@ h3 {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 2.75em;
+  font-size: 2.75rem;
 }
 
 h3 {
-  font-size: 2.125em;
+  font-size: 2.125rem;
 }
 
 h4 {
@@ -168,12 +168,14 @@ h4 {
 
 p {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
 }
 
 .link {
   color: var(--sensation-yellow);
+  text-decoration: underline;
+  font-size: 1.25rem;
 }
 
 [class*="container"] {
