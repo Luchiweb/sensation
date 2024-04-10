@@ -1,0 +1,27 @@
+.circle-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+.circle {
+  background-color: var(--main-bg);
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.circle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 75px;
+  height: 70px;
+  transition: 0.3s;
+}

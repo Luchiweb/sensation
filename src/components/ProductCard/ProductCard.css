@@ -1,5 +1,3 @@
-@import "../../css/variables.css";
-
 .productCard a {
   display: flex;
   flex-direction: column;

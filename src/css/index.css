@@ -188,6 +188,14 @@ p {
   max-width: 1400px;
 }
 
+[class*="titles"] {
+  text-align: center;
+}
+
+[class*="titles"] h2 {
+  margin-top: 0.5rem;
+}
+
 @media (min-width: 768px) {
   .container {
     padding-left: 2.5rem;

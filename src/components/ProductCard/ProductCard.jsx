@@ -1,6 +1,7 @@
-import PropTypes from 'prop-types';
 import './ProductCard.css';
-import productCard from '../../assets/images/arrow.svg';
+
+import PropTypes from 'prop-types';
+import productCard from '../../assets/icons/arrow.svg';
 
 function ProductCard({ name, imageUrl, pageUrl }) {
   return (

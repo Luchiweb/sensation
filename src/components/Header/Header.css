@@ -1,5 +1,3 @@
-@import "../../css/variables.css";
-
 .header {
   background-color: var(--main-bg);
   padding: 1.5em 0;
