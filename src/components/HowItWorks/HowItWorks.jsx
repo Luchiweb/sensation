@@ -40,6 +40,7 @@ const HowItWorks = () => {
           <div className="icon-part">
             <CircleIcon imgUrl={selection} title="photo selection" />
             <CircleIcon imgUrl={design} title="photobook design" />
+            <div className="block"></div>
           </div>
           <div className="text-part">
             <div className="blur">
@@ -61,6 +62,7 @@ const HowItWorks = () => {
             <CircleIcon imgUrl={book} title="any cover" />
             <CircleIcon imgUrl={size} title="any size" />
             <CircleIcon imgUrl={price} title="price from $300" />
+            <div className="block"></div>
           </div>
         </div>
         <div className="step promotion">
@@ -77,6 +79,7 @@ const HowItWorks = () => {
             <Button link="#" text="Book free consultation" size="small" state="transparent" />
             <Button link="#" text="Order a design" size="small" />
           </div>
+          <div className="block"></div>
         </div>
       </div>
     </section>

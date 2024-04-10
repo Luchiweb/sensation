@@ -130,10 +130,6 @@ img {
   display: block;
 }
 
-article > * + * {
-  margin-top: 1em;
-}
-
 input,
 button,
 textarea,
@@ -145,6 +141,7 @@ h1,
 h2,
 h3 {
   font-family: var(--title-font);
+  text-align: center;
 }
 
 h1 {
@@ -153,6 +150,7 @@ h1 {
 
 h2 {
   font-size: 2.75rem;
+  margin-top: 0.5rem;
 }
 
 h3 {
@@ -164,6 +162,7 @@ h4 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--sensation-yellow);
+  text-align: center;
 }
 
 p {
@@ -192,9 +191,9 @@ p {
   text-align: center;
 }
 
-[class*="titles"] h2 {
+/* [class*="titles"] h2 {
   margin-top: 0.5rem;
-}
+} */
 
 @media (min-width: 768px) {
   .container {

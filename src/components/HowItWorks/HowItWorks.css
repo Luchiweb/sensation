@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .howItWorks-steps {
@@ -96,7 +97,7 @@
   filter: grayscale(1);
 }
 
-.step-one .icon-part::after,
+/* .step-one .icon-part::after,
 .step-two .text-part::after {
   content: url("../../assets/icons/line.svg");
   position: absolute;
@@ -104,10 +105,10 @@
   right: -1rem;
   height: 19.5rem;
   overflow: hidden;
-}
+} */
 
-.step-one .icon-part::before,
-.step-two .text-part::before {
+.step-one .icon-part::after,
+.step-two .text-part::after {
   position: absolute;
   right: -3rem;
   top: 50%;
@@ -122,44 +123,49 @@
   font-family: var(--title-font);
 }
 
-.step-one .icon-part::before {
+.step-one .icon-part::after {
   content: "1";
 }
 
-.step-two .text-part::before {
+.step-two .text-part::after {
   content: "2";
 }
 
-/* .arrow {
+.step-one .block {
+  width: 27%;
+  height: 19.5rem;
   position: absolute;
-  top: 0;
+  right: -1rem;
+  border-right: 2px dashed var(--sensation-yellow);
+  border-bottom: 2px dashed var(--sensation-yellow);
+}
+
+.step-two .block {
+  width: 14%;
+  height: 19.5rem;
+  position: absolute;
+  left: -1rem;
+  border-left: 2px dashed var(--sensation-yellow);
+  border-bottom: 2px dashed var(--sensation-yellow);
+}
+
+.promotion .block {
+  width: 15%;
+  height: 22rem;
+  position: absolute;
   left: 50%;
-  width: 2px;
-  background: #000; 
+  top: -1rem;
+  border-left: 2px dashed var(--sensation-yellow);
   z-index: -1;
 }
 
-.arrow::before,
-.arrow::after {
-  content: "";
+.promotion .block::after {
+  content: "\21E3";
   position: absolute;
-  left: -10px; 
-  background: inherit;
+  bottom: -2.5rem;
+  left: -0.7rem;
+  font-size: 2rem;
 }
-
-.arrow::before {
-  top: 50%;
-  width: 100px; 
-  border-radius: 50px;
-  transform: rotate(-45deg);
-}
-
-.arrow::after {
-  top: calc(100% + 60px); 
-  width: 200px; 
-  border-radius: 100px;
-  transform: rotate(45deg);
-} */
 
 @media (max-width: 768px) {
   .step {
@@ -174,6 +180,6 @@
   }
 
   .step-two .icon-part {
-    order: 0; /* Reset order for mobile */
+    order: 0;
   }
 }
