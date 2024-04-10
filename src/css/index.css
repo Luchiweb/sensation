@@ -178,10 +178,11 @@ p {
 }
 
 [class*="container"] {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   justify-content: space-between;
   align-items: center;
   max-width: 1400px;
@@ -190,10 +191,6 @@ p {
 [class*="titles"] {
   text-align: center;
 }
-
-/* [class*="titles"] h2 {
-  margin-top: 0.5rem;
-} */
 
 @media (min-width: 768px) {
   .container {

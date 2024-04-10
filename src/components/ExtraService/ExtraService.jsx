@@ -2,6 +2,7 @@ import Banner from '../Banner/Banner';
 import wedBox from '../../assets/images/wedding-box.jpg';
 
 import './ExtraService.css';
+import ThanksCollection from '../ThanksCollection/ThanksCollection';
 
 function ExtraService() {
   return (
@@ -20,6 +21,7 @@ function ExtraService() {
           </a>
         </div>
       </Banner>
+      <ThanksCollection />
     </section>
   );
 }

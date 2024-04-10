@@ -1,0 +1,13 @@
+.thanks-container {
+  flex-direction: column;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.thanks-for {
+  display: flex;
+}
+
+.thanks-container .button {
+  margin-top: 4rem;
+}

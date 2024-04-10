@@ -1,11 +1,11 @@
 import './ProductCard.css';
 
 import PropTypes from 'prop-types';
-import productCard from '../../assets/icons/arrow.svg';
+import arrow from '../../assets/icons/arrow.svg';
 
-function ProductCard({ name, imageUrl, pageUrl }) {
+function ProductCard({ name, imageUrl, pageUrl, color }) {
   return (
-    <article className="productCard">
+    <article className={"productCard " + color ?? ""}>
       <a href={pageUrl} aria-label={`${name} details`}>
         <figure>
           <img src={imageUrl} alt={`${name} cover`} />
@@ -14,7 +14,7 @@ function ProductCard({ name, imageUrl, pageUrl }) {
         <div className="productCard-info">
           <h4 className="productCard-title">{name}</h4>
           <span>
-            <img src={productCard} alt="arrow" />
+            <img src={arrow} alt="arrow" />
           </span>
         </div>
       </a>
@@ -26,5 +26,6 @@ ProductCard.propTypes = {
   name: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   pageUrl: PropTypes.string.isRequired,
+  color: PropTypes.string,
 };
 export default ProductCard;
