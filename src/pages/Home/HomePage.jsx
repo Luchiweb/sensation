@@ -3,6 +3,7 @@ import ExtraService from '../../components/ExtraService/ExtraService';
 import Header from '../../components/Header/Header';
 import Hero from '../../components/Hero/Hero';
 import HowItWorks from '../../components/HowItWorks/HowItWorks';
+import Promo from '../../components/Promo/Promo';
 import Reviews from '../../components/Reviews/Reviews';
 
 function HomePage() {
@@ -14,6 +15,7 @@ function HomePage() {
       <HowItWorks />
       <ExtraService />
       <Reviews />
+      <Promo />
     </>
   );
 }

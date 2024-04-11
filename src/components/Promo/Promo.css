@@ -1,0 +1,44 @@
+.promo {
+  display: flex;
+  color: var(--main-bg);
+  gap: 1.5rem;
+}
+
+.promo h5 {
+  color: var(--main-bg);
+}
+
+.promo .button {
+  margin-top: 1.5rem;
+}
+
+.reminder .button {
+  filter: grayscale(1);
+}
+
+.reminder,
+.book {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reminder {
+  flex-basis: 40%;
+  background-image: url("../../assets/images/promo1.png");
+  align-items: flex-start;
+  text-align: start;
+}
+
+.reminder h3 {
+  text-align: start;
+}
+
+.book {
+  flex-basis: 60%;
+  background-image: url("../../assets/images/promo2.png");
+  align-items: center;
+}
