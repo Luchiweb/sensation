@@ -1,0 +1,22 @@
+.reviews-container {
+  flex-direction: column;
+  padding: 6rem 0;
+}
+
+.review {
+  background-color: var(--secondary-bg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.review h4 {
+  color: var(--sensation-yellow);
+}
+
+.reviews-slider {
+  margin-top: 2.5rem;
+  width: 100%;
+}
