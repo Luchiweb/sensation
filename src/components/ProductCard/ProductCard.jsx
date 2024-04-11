@@ -12,7 +12,7 @@ function ProductCard({ name, imageUrl, pageUrl, color }) {
           <figcaption>{name}</figcaption>
         </figure>
         <div className="productCard-info">
-          <h4 className="productCard-title">{name}</h4>
+          <h5 className="productCard-title">{name}</h5>
           <span>
             <img src={arrow} alt="arrow" />
           </span>

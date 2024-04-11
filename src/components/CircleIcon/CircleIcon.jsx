@@ -8,7 +8,7 @@ function CircleIcon({ imgUrl, title }) {
       <div className="circle">
         <img src={imgUrl} alt="img" />
       </div>
-      {title ? <h4>{title}</h4> : <></>}
+      {title ? <h5>{title}</h5> : <></>}
     </div>
   );
 }

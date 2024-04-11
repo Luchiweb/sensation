@@ -11,7 +11,7 @@ function BookCollection() {
     return (
         <section className="bookCollection-container">
             <div className="bookCollection-titles">
-                <h4>best luxury photobooks</h4>
+                <h5>best luxury photobooks</h5>
                 <h2>Explore Wedding Premium Collection</h2>
             </div>
             <div className="bookCollection-products">

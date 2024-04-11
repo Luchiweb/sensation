@@ -9,7 +9,7 @@ function Hero() {
       <video src={videoBG} autoPlay muted loop></video>
       <div className="hero-container">
         <div className="hero-text">
-          <h4>by sensation album</h4>
+          <h5>by sensation album</h5>
           <h1>Wedding Photobook Service in Canada</h1>
           <p>
             The first personalized offerings service. Specializing in premium wedding photo books,

@@ -12,7 +12,7 @@ function ExtraService() {
       <Banner imageUrl={wedBox} bg="white">
         <div className="extra-info">
           <div>
-            <h4>bridal dream</h4>
+            <h5>bridal dream</h5>
             <h3>Big Wedding Box</h3>
           </div>
           <p>put together a box of gifts and gratitude for those you care about</p>

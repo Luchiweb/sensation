@@ -32,21 +32,23 @@ const HowItWorks = () => {
   return (
     <section className="howItWorks-container">
       <div className="howItWorks-titles">
-        <h4>how it works</h4>
+        <h5>how it works</h5>
         <h2>Create your wedding book with our pro team</h2>
       </div>
       <div className="howItWorks-steps">
         <div className="step step-one">
           <div className="icon-part">
-            <CircleIcon imgUrl={selection} title="photo selection" />
-            <CircleIcon imgUrl={design} title="photobook design" />
+            <h4 className="icon-title">Order a design of your wedding book</h4>
+            <div className="icons">
+              <CircleIcon imgUrl={selection} title="photo selection" />
+              <CircleIcon imgUrl={design} title="photobook design" />
+            </div>
+            <Button link="#" text="Order design" size="small" state="transparent" />
             <div className="block"></div>
           </div>
           <div className="text-part">
             <div className="blur">
               <h3>All Starts With Design</h3>
-              <p>begin your story by ordering a bespoke design</p>
-              <Button link="#" text="Order design" size="small" state="transparent" />
             </div>
           </div>
         </div>
@@ -54,18 +56,20 @@ const HowItWorks = () => {
           <div className="text-part">
             <div className="blur">
               <h3>After Design</h3>
-              <p>print a luxury wedding photo book</p>
-              <Button link="#" text="Calculate price" size="small" state="transparent" />
             </div>
           </div>
           <div className="icon-part">
-            <CircleIcon imgUrl={book} title="any cover" />
-            <CircleIcon imgUrl={size} title="any size" />
-            <CircleIcon imgUrl={price} title="price from $300" />
+            <h4 className="icon-title">Print a luxury wedding photo book</h4>
+            <div className="icons">
+              <CircleIcon imgUrl={book} title="any cover" />
+              <CircleIcon imgUrl={size} title="any size" />
+              <CircleIcon imgUrl={price} title="price from $300" />
+            </div>
+            <Button link="#" text="Calculate price" size="small" state="transparent" />
             <div className="block"></div>
           </div>
         </div>
-        <div className="step promotion">
+        <div className="promotion">
           <div className="promotion-busy">
             <span>service is busy at</span>
             <div className="stars">
