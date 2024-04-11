@@ -1,25 +1,22 @@
 import "./BookCollection.css"
 
-import classic from "../../assets/images/classic.jpg"
-import photoart from "../../assets/images/photoart.jpg"
-import impress from "../../assets/images/impress.jpg"
-import grandwood from "../../assets/images/grandwood.jpg"
-import ProductCard from "../ProductCard/ProductCard"
+import ProductList from "../ProductList/ProductList"
+import products from "../../helpers/products"
+import { useMemo } from "react";
 
 
 function BookCollection() {
+    const premiumProducts = useMemo(() => {
+        return products.filter((product) => product.type === 'premium');
+    }, []);
+
     return (
         <section className="bookCollection-container">
             <div className="bookCollection-titles">
                 <h5>best luxury photobooks</h5>
                 <h2>Explore Wedding Premium Collection</h2>
             </div>
-            <div className="bookCollection-products">
-                <ProductCard name="Classic" pageUrl="#" imageUrl={classic} />
-                <ProductCard name="Photoart" pageUrl="#" imageUrl={photoart} />
-                <ProductCard name="Grandwood" pageUrl="#" imageUrl={grandwood} />
-                <ProductCard name="Impress" pageUrl="#" imageUrl={impress} />
-            </div>
+            <ProductList products={premiumProducts} columns={4} />
         </section>
     )
 }

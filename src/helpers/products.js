@@ -71,4 +71,8 @@ const products = [{
     pageUrl: "#",
 },]
 
+export function productTypeFilter(type) {
+    return products.filter(product => product.type === type)
+}
+
 export default products
