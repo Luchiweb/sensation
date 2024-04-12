@@ -113,7 +113,7 @@
 .step-two .text-part::after {
   position: absolute;
   right: -3rem;
-  top: 50%;
+  top: 45%;
   z-index: 4;
   width: 65px;
   height: 65px;
@@ -123,6 +123,9 @@
   font-size: 3rem;
   background-color: var(--main-bg);
   font-family: var(--title-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .step-one .icon-part::after {

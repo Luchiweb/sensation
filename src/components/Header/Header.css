@@ -21,6 +21,12 @@
   transition: color 0.2s ease;
 }
 
+.logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
 @media (hover: hover) {
   .navbar a:hover {
     color: var(--sensation-yellow);

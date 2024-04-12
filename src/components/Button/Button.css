@@ -46,11 +46,20 @@
 
 @media (hover: hover) {
   .button:hover {
-    background-color: #c5a472;
-    border-color: #c5a472;
     transform: translateY(-3px);
   }
+
+  .button.primary:hover {
+    background-color: #c5a472;
+    border-color: #c5a472;
+  }
   .button.transparent:hover {
+    background-color: var(--sensation-yellow);
+    border-color: var(--sensation-yellow);
     color: var(--main-bg);
+  }
+
+  .button.white:hover {
+    opacity: 0.8;
   }
 }

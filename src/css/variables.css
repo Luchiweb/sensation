@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap");
 
 :root {
-    --sensation-yellow: #D2B589;
-    --sensation-black: #262626;
-    --sensation-gray: #B0B0B0;
-    --sensation-dark-gray: #7A7A7A;
-    --main-bg: #FFFFFF;
-    --secondary-bg: #F8F8F8;
+  --sensation-yellow: #d2b589;
+  --sensation-black: #262626;
+  --sensation-gray: #b0b0b0;
+  --sensation-dark-gray: #7a7a7a;
+  --main-bg: #ffffff;
+  --secondary-bg: #f8f8f8;
 
-    --title-font: "Marcellus", serif;
-    --text-font: "Lato", sans-serif;
+  --title-font: "Marcellus", serif;
+  --text-font: "Lato", sans-serif;
 }
