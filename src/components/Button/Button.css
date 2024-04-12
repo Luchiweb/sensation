@@ -55,6 +55,7 @@
 @media (min-width: 768px) {
   .button {
     width: auto;
+    max-width: 100%;
   }
 
   .button.small {

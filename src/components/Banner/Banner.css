@@ -26,7 +26,7 @@
 @media (min-width: 768px) {
   .banner {
     flex-direction: row;
-    min-height: 28.25rem;
+    min-height: 22rem;
   }
 
   .banner-text-content {
@@ -37,5 +37,11 @@
   .banner-image {
     flex-basis: 50%;
     height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    min-height: 28.25rem;
   }
 }
