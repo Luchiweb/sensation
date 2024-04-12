@@ -23,21 +23,22 @@
 .icon-part {
   display: flex;
   flex-direction: column;
+  gap: 2.5rem;
+  padding: 1rem;
 }
 
 .icon-part .icons {
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: 6rem;
+  gap: 2rem;
 }
 
 .step {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
   justify-content: space-between;
   position: relative;
-  height: 22rem;
   text-align: center;
   position: relative;
 }
@@ -46,9 +47,8 @@
 .step-two .icon-part {
   position: relative;
   flex-basis: 58%;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .step-one .text-part,
 .step-two .text-part {
@@ -63,6 +63,7 @@
 
 .step-one .text-part {
   background-image: url("../../assets/images/hiw-bg1.png");
+  order: -1;
 }
 
 .step-two .text-part {
@@ -88,12 +89,14 @@
   justify-content: center;
   gap: 1rem;
   position: relative;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem;
 }
 
 .promotion-buttons {
   display: flex;
-  gap: 2rem;
+  flex-direction: column-reverse;
+  gap: 0.5rem;
+  width: 100%;
 }
 
 .promotion-busy {
@@ -109,84 +112,110 @@
   filter: grayscale(1);
 }
 
-.step-one .icon-part::after,
-.step-two .text-part::after {
-  position: absolute;
-  right: -3rem;
-  top: 45%;
-  z-index: 4;
-  width: 65px;
-  height: 65px;
-  border-radius: 100%;
-  border: 2px solid var(--sensation-yellow);
-  color: var(--sensation-yellow);
-  font-size: 3rem;
-  background-color: var(--main-bg);
-  font-family: var(--title-font);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.icon-title {
+  font-size: 1.5rem;
 }
 
-.step-one .icon-part::after {
-  content: "1";
+.block {
+  display: none;
 }
 
-.step-two .text-part::after {
-  content: "2";
-}
-
-.step-one .block,
-.step-two .block {
-  height: 24.2rem;
-  position: absolute;
-}
-
-.step-one .block {
-  width: 27%;
-  right: -1rem;
-  border-right: 2px dashed var(--sensation-yellow);
-  border-bottom: 2px dashed var(--sensation-yellow);
-}
-
-.step-two .block {
-  width: 14%;
-  left: -1rem;
-  border-left: 2px dashed var(--sensation-yellow);
-  border-bottom: 2px dashed var(--sensation-yellow);
-}
-
-.promotion .block {
-  width: 15%;
-  height: 18rem;
-  position: absolute;
-  left: 50%;
-  top: -1rem;
-  border-left: 2px dashed var(--sensation-yellow);
-  z-index: -1;
-}
-
-.promotion .block::after {
-  content: "\21E3";
-  position: absolute;
-  bottom: -2.5rem;
-  left: -0.7rem;
-  font-size: 2rem;
-}
-
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .step {
-    flex-direction: column;
+    flex-direction: row;
+    height: 16rem;
+    gap: 2rem;
   }
 
-  .step-one .icon-part,
-  .step-one .text-part,
-  .step-two .text-part,
-  .step-two .icon-part {
-    flex-basis: 100%;
+  .step-one {
+    flex-direction: row-reverse;
   }
 
-  .step-two .icon-part {
-    order: 0;
+  .step-one .icon-part::after,
+  .step-two .text-part::after {
+    position: absolute;
+    right: -50px;
+    top: 45%;
+    z-index: 4;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    border: 2px solid var(--sensation-yellow);
+    color: var(--sensation-yellow);
+    font-size: 2.5rem;
+    background-color: var(--main-bg);
+    font-family: var(--title-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step-one .icon-part::after {
+    content: "1";
+  }
+
+  .step-two .text-part::after {
+    content: "2";
+  }
+
+  .step-one .block,
+  .step-two .block {
+    height: 18.2rem;
+    position: absolute;
+    display: block;
+  }
+
+  .step-one .block {
+    width: 27%;
+    right: -1rem;
+    border-right: 2px dashed var(--sensation-yellow);
+    border-bottom: 2px dashed var(--sensation-yellow);
+  }
+
+  .step-two .block {
+    width: 14%;
+    left: -1rem;
+    border-left: 2px dashed var(--sensation-yellow);
+    border-bottom: 2px dashed var(--sensation-yellow);
+  }
+
+  .promotion-buttons {
+    flex-direction: row;
+    gap: 2rem;
+    width: auto;
+  }
+
+  .promotion .block {
+    width: 15%;
+    height: 18rem;
+    position: absolute;
+    left: 50%;
+    top: -1rem;
+    border-left: 2px dashed var(--sensation-yellow);
+    z-index: -1;
+    display: block;
+  }
+
+  .promotion .block::after {
+    content: "\21E3";
+    position: absolute;
+    bottom: -2.5rem;
+    left: -0.7rem;
+    font-size: 2rem;
+  }
+
+  .icon-part .icons {
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .step {
+    height: 22rem;
+  }
+
+  .step-one .block,
+  .step-two .block {
+    height: 24.2rem;
   }
 }

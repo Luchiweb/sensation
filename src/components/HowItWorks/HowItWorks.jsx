@@ -38,7 +38,7 @@ const HowItWorks = () => {
       <div className="howItWorks-steps">
         <div className="step step-one">
           <div className="icon-part">
-            <h4 className="icon-title">Order a design of your wedding book</h4>
+            {/* <div className="icon-title">Order a design of your wedding book</div> */}
             <div className="icons">
               <CircleIcon imgUrl={selection} title="photo selection" />
               <CircleIcon imgUrl={design} title="photobook design" />
@@ -49,6 +49,7 @@ const HowItWorks = () => {
           <div className="text-part">
             <div className="blur">
               <h3>All Starts With Design</h3>
+              <p>order a design of your wedding book</p>
             </div>
           </div>
         </div>
@@ -56,14 +57,15 @@ const HowItWorks = () => {
           <div className="text-part">
             <div className="blur">
               <h3>After Design</h3>
+              <p>print a luxury wedding photo book</p>
             </div>
           </div>
           <div className="icon-part">
-            <h4 className="icon-title">Print a luxury wedding photo book</h4>
+            {/* <div className="icon-title">Print a luxury wedding photo book</div> */}
             <div className="icons">
               <CircleIcon imgUrl={book} title="any cover" />
               <CircleIcon imgUrl={size} title="any size" />
-              <CircleIcon imgUrl={price} title="price from $300" />
+              <CircleIcon imgUrl={price} title="from $300" />
             </div>
             <Button link="#" text="Calculate price" size="small" state="transparent" />
             <div className="block"></div>

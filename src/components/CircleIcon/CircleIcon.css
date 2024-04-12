@@ -9,8 +9,8 @@
 
 .circle {
   background-color: var(--main-bg);
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   position: relative;
   margin: auto;
@@ -21,7 +21,29 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  max-width: 75px;
-  height: 70px;
+  max-width: 45px;
+  height: 40px;
   transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .circle {
+    width: 75px;
+    height: 75px;
+  }
+  .circle img {
+    max-width: 60px;
+    height: 55px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+  .circle img {
+    max-width: 75px;
+    height: 70px;
+  }
 }

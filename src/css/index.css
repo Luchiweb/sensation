@@ -162,7 +162,7 @@ h4 {
 
 h5 {
   font-size: 1rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--sensation-yellow);
   text-align: center;
