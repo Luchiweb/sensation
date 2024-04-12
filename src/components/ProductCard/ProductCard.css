@@ -7,6 +7,7 @@
   flex-direction: column;
   background-color: var(--main-bg);
   transition: background-color 0.2s ease;
+  max-width: 22rem;
 }
 
 .productCard figcaption {
@@ -36,7 +37,7 @@
   }
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   .productCard-title {
     font-size: 0.75rem;
   }

@@ -4,11 +4,11 @@
 
 .productList-products {
   display: grid;
-  grid-gap: 1.5rem;
+  grid-gap: 0.5rem;
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .productList-products.col-3 {
     grid-template-columns: repeat(3, 1fr);
   }

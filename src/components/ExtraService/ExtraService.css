@@ -14,7 +14,7 @@
   border-radius: 100%;
   border: 2px solid var(--sensation-yellow);
   color: var(--sensation-yellow);
-  font-size: 2rem;
+  font-size: 24px;
   background-color: var(--main-bg);
   font-family: var(--title-font);
 }
@@ -25,9 +25,14 @@
   align-items: center;
   gap: 0.5rem;
   background-color: var(--main-bg);
-  max-width: 50%;
 }
 
 .extra .banner {
   margin-top: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .extra-info {
+    max-width: 22rem;
+  }
 }
