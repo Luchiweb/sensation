@@ -5,7 +5,7 @@ import arrow from '../../assets/icons/arrow.svg';
 
 function ProductCard({ name, imageUrl, pageUrl, color }) {
   return (
-    <article className={"productCard " + color ?? ""}>
+    <article className={"productCard " + (color ?? "")}>
       <a href={pageUrl} aria-label={`${name} details`}>
         <figure>
           <img src={imageUrl} alt={`${name} cover`} />
