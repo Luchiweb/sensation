@@ -1,7 +1,27 @@
 .productList {
   margin-top: 2.5rem;
 }
+
 .productList-products {
-  display: flex;
-  gap: 1.5rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .productList-products.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .productList-products.col-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .productList-products.col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

@@ -1,4 +1,4 @@
-// import BookCollection from '../../components/BookCollection/BookCollection';
+import BookCollection from '../../components/BookCollection/BookCollection';
 // import ExtraService from '../../components/ExtraService/ExtraService';
 import Header from '../../components/Header/Header';
 import Hero from '../../components/Hero/Hero';
@@ -11,8 +11,8 @@ function HomePage() {
     <>
       <Header />
       <Hero />
-      {/* <BookCollection />
-      <HowItWorks />
+      <BookCollection />
+      {/* <HowItWorks />
       <ExtraService />
       <Reviews />
       <Promo /> */}

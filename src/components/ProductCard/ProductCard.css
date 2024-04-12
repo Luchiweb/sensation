@@ -21,6 +21,9 @@
 }
 
 .productCard-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   color: var(--sensation-black);
 }
 
@@ -30,5 +33,11 @@
   }
   .productCard a:hover {
     background-color: var(--secondary-bg);
+  }
+}
+
+@media (min-width: 786px) {
+  .productCard-title {
+    font-size: 0.75rem;
   }
 }
