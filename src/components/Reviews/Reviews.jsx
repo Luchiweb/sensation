@@ -16,8 +16,18 @@ function Reviews() {
             '--swiper-navigation-color': '#D2B589',
             '--swiper-pagination-color': '#D2B589',
           }}
+          breakpoints={JSON.stringify({
+            320: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          })}
           space-between="20"
-          slides-per-view="3"
           pagination-clickable="true"
           pagination="true"
         >
