@@ -1,5 +1,6 @@
 .promo {
   display: flex;
+  flex-direction: column-reverse;
   color: var(--main-bg);
   gap: 1.5rem;
 }
@@ -20,6 +21,7 @@
 .book {
   padding: 2rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   background-size: cover;
@@ -27,18 +29,32 @@
 }
 
 .reminder {
-  flex-basis: 40%;
   background-image: url("../../assets/images/promo1.png");
-  align-items: flex-start;
-  text-align: start;
-}
-
-.reminder h3 {
-  text-align: start;
 }
 
 .book {
-  flex-basis: 60%;
   background-image: url("../../assets/images/promo2.png");
-  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    flex-direction: row;
+  }
+
+  .reminder {
+    flex-basis: 40%;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .reminder h3,
+  .reminder h5 {
+    text-align: start;
+  }
+
+  .book {
+    flex-basis: 60%;
+    background-image: url("../../assets/images/promo2.png");
+    align-items: center;
+  }
 }

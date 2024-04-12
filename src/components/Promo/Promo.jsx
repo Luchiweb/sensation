@@ -6,7 +6,7 @@ function Promo() {
         <section className="promo">
             <div className="reminder">
                 <h5>Is your wedding still on the horizon?</h5>
-                <h3>We will remind you about us after your wedding</h3>
+                <h3>The Story Awaits Its Telling</h3>
                 <Button text="Set reminder" size="small" state="white" link="#" />
             </div>
             <div className="book">

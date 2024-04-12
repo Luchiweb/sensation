@@ -11,6 +11,7 @@
 .button {
   padding: 8px 8px;
   width: 100%;
+  max-width: 22rem;
 }
 
 .button.primary {

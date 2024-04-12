@@ -4,7 +4,7 @@ import BookCollection from '../../components/BookCollection/BookCollection';
 import HowItWorks from '../../components/HowItWorks/HowItWorks';
 import ExtraService from '../../components/ExtraService/ExtraService';
 import Reviews from '../../components/Reviews/Reviews';
-// import Promo from '../../components/Promo/Promo';
+import Promo from '../../components/Promo/Promo';
 
 function HomePage() {
   return (
@@ -15,7 +15,7 @@ function HomePage() {
       <HowItWorks />
       <ExtraService />
       <Reviews />
-      {/* <Promo /> */}
+      <Promo />
     </>
   );
 }
