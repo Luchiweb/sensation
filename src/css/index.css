@@ -32,7 +32,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -196,18 +195,36 @@ p {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 479px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 767px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }

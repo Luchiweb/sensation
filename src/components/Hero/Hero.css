@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  height: calc(100vh - 97px);
+  min-height: calc(100vh - 66px);
   position: relative;
   display: flex;
   align-items: center;
@@ -17,10 +17,12 @@
 
 .hero-container {
   gap: 4rem;
+  padding: 2rem 0;
 }
 
 .hero-buttons {
   gap: 1.5rem;
+  width: 100%;
 }
 
 .hero video {
@@ -32,6 +34,21 @@
   filter: brightness(0.8);
 }
 
-.hero p {
-  max-width: 50vw;
+@media (min-width: 480px) {
+  .hero-buttons {
+    width: auto;
+  }
+
+  .hero p {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: calc(100vh - 97px);
+  }
+  .hero p {
+    max-width: 50vw;
+  }
 }

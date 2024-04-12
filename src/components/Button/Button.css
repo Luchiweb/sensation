@@ -8,20 +8,7 @@
   transition: all 0.4s ease;
 }
 
-.button.small {
-  padding: 8px 60px;
-  font-size: 1rem;
-}
-
-.button.medium {
-  padding: 10px 60px;
-}
-
-.button.large {
-  padding: 10px 120px;
-}
-
-.button.full {
+.button {
   padding: 10px 10px;
   width: 100%;
 }
@@ -61,5 +48,25 @@
 
   .button.white:hover {
     opacity: 0.8;
+  }
+}
+
+@media (min-width: 768px) {
+  .button.small {
+    padding: 8px 60px;
+    font-size: 1rem;
+  }
+
+  .button.medium {
+    padding: 10px 60px;
+  }
+
+  .button.large {
+    padding: 10px 120px;
+  }
+
+  .button.full {
+    padding: 10px 10px;
+    width: 100%;
   }
 }
