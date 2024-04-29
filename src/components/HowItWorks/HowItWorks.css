@@ -94,6 +94,7 @@
 
 .promotion-buttons {
   display: flex;
+  align-items: center;
   flex-direction: column-reverse;
   gap: 0.5rem;
   width: 100%;

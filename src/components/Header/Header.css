@@ -10,13 +10,24 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  position: fixed;
   text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: var(--main-bg);
+  padding: 10rem 1rem;
+  z-index: 3;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar a {
   color: var(--sensation-black);
   letter-spacing: 0.06em;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 14px;
   transition: color 0.2s ease;
 }
@@ -36,7 +47,10 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  position: relative;
+  z-index: 4;
 }
+
 .burger-menu span {
   display: block;
   width: 100%;
@@ -44,18 +58,32 @@
   background-color: var(--sensation-black);
 }
 
-.navbar,
 .logo-dendalion {
   display: none;
 }
 
-.navbar.visible {
-  display: flex;
-  flex-direction: column;
+.header.nav-visible .navbar {
+  transform: translateX(0);
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.header.nav-visible .backdrop {
+  display: block;
 }
 
 @media (min-width: 768px) {
-  .burger-menu {
+  .burger-menu,
+  .backdrop {
     display: none;
   }
 
@@ -64,7 +92,18 @@
   }
 
   .navbar {
-    display: flex;
+    position: static;
+    height: auto;
+    flex-direction: row;
+    box-shadow: none;
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+    transform: translateX(0);
+  }
+
+  .navbar a {
+    font-size: 0.75rem;
   }
 }
 
