@@ -9,18 +9,20 @@ function ExtraService() {
     <section className="extra">
       <div className="step-number">3</div>
       <h2>Extra Service</h2>
-      <Banner imageUrl={wedBox} bg="white">
-        <div className="extra-info">
-          <div>
-            <h5>bridal dream</h5>
-            <h3>Big Wedding Box</h3>
+      <div className="extraBanner-container">
+        <Banner imageUrl={wedBox} bg="white">
+          <div className="extra-info">
+            <div>
+              <h5>bridal dream</h5>
+              <h3>Big Wedding Box</h3>
+            </div>
+            <p>put together a box of gifts and gratitude for those you care about</p>
+            <a href="#" className="link">
+              on special terms
+            </a>
           </div>
-          <p>put together a box of gifts and gratitude for those you care about</p>
-          <a href="#" className="link">
-            on special terms
-          </a>
-        </div>
-      </Banner>
+        </Banner>
+      </div>
       <ThanksCollection />
     </section>
   );

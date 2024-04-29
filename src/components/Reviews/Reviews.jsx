@@ -27,7 +27,7 @@ function Reviews() {
               slidesPerView: 3,
             },
           })}
-          space-between="20"
+          space-between="16"
           pagination-clickable="true"
           pagination="true"
         >

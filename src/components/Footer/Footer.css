@@ -1,8 +1,13 @@
+.footer {
+  background-color: var(--secondary-bg);
+  margin-top: 4rem;
+}
+
 .footer-container {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: center;
   gap: 4rem;
 }
 

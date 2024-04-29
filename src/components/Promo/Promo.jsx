@@ -3,7 +3,7 @@ import "./Promo.css"
 
 function Promo() {
     return (
-        <section className="promo">
+        <section className="promo promo-container">
             <div className="reminder">
                 <h5>Is your wedding still on the horizon?</h5>
                 <h3>The Story Awaits Its Telling</h3>

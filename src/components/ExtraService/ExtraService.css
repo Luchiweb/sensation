@@ -27,8 +27,9 @@
   background-color: var(--main-bg);
 }
 
-.extra .banner {
+.extraBanner-container {
   margin-top: 2.5rem;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
