@@ -5,6 +5,7 @@ import HowItWorks from '../../components/HowItWorks/HowItWorks';
 import ExtraService from '../../components/ExtraService/ExtraService';
 import Reviews from '../../components/Reviews/Reviews';
 import Promo from '../../components/Promo/Promo';
+import Footer from '../../components/Footer/Footer';
 
 function HomePage() {
   return (
@@ -16,6 +17,7 @@ function HomePage() {
       <ExtraService />
       <Reviews />
       <Promo />
+      <Footer />
     </>
   );
 }
