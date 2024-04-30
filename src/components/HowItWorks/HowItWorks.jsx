@@ -1,91 +1,87 @@
+import Banner from '../Banner/Banner';
 import Button from '../Button/Button';
 import CircleIcon from '../CircleIcon/CircleIcon';
 
-import star from '../../assets/icons/busy-star.svg';
+import manager from '../../assets/icons/manager.svg';
 import selection from '../../assets/icons/photo-selection.svg';
 import design from '../../assets/icons/design.svg';
 import book from '../../assets/icons/book.svg';
 import size from '../../assets/icons/size.svg';
 import price from '../../assets/icons/price.svg';
+import hiw1 from '../../assets/images/hiw-bg1.jpg';
+import hiw2 from '../../assets/images/hiw-bg2.jpg';
+import wedBox from '../../assets/images/wedding-box.jpg';
 
 import './HowItWorks.css';
 
 const HowItWorks = () => {
-  const busyness = 3;
-
-  const promotionTexts = {
-    5: 'Book the designer to get the book to you in time for December',
-    4: 'get 15% off Design Services',
-    3: 'get 20% off Design Services',
-    2: 'get 30% off Design Services',
-  };
-
-  function stars() {
-    let starArr = [];
-    for (let i = 0; i < 5; i++) {
-      const className = busyness - i > 0 ? 'star' : 'star gray';
-      starArr.push(className);
-    }
-    return starArr;
-  }
-
   return (
-    <section className="howItWorks-container">
-      <div className="howItWorks-titles">
-        <h5>how it works</h5>
-        <h2>Create your wedding book with our pro team</h2>
-      </div>
-      <div className="howItWorks-steps">
-        <div className="step step-one">
-          <div className="icon-part">
-            {/* <div className="icon-title">Order a design of your wedding book</div> */}
-            <div className="icons">
-              <CircleIcon imgUrl={selection} title="photo selection" />
-              <CircleIcon imgUrl={design} title="photobook design" />
-            </div>
-            <Button link="#" text="Order design" size="small" state="transparent" />
-            <div className="block"></div>
-          </div>
-          <div className="text-part">
-            <div className="blur">
-              <h3>All Starts With Design</h3>
-              <p>order a design of your wedding book</p>
-            </div>
-          </div>
+    <section className="howItWorks">
+      <div className="howItWorks-container">
+        <div className="howItWorks-titles">
+          <h5>your book our work</h5>
+          <h2>How it works</h2>
         </div>
-        <div className="step step-two">
-          <div className="text-part">
-            <div className="blur">
-              <h3>After Design</h3>
-              <p>print a luxury wedding photo book</p>
+        <div className="howItWorks-steps">
+          <Banner imageUrl={hiw1} bg="white" direction="reverse">
+            <div className="step-content">
+              <div className="step-number">1</div>
+              <div>
+                <h6>all starts with design</h6>
+                <h3>Order a bespoke design of your wedding book</h3>
+              </div>
+              <div className="step-icons">
+                <div className="icon-service">
+                  <CircleIcon imgUrl={manager} title="online advicory" />
+                  <span>free</span>
+                </div>
+                <div className="icon-service">
+                  <CircleIcon imgUrl={design} title="photobook design" />
+                  <span>$98</span>
+                </div>
+                <div className="icon-service">
+                  <CircleIcon imgUrl={selection} title="photo selection" />
+                  <span>$140</span>
+                </div>
+              </div>
+              <Button
+                link="#"
+                text="Get 30% off Design Services"
+                size="small"
+                state="transparent"
+              />
             </div>
-          </div>
-          <div className="icon-part">
-            {/* <div className="icon-title">Print a luxury wedding photo book</div> */}
-            <div className="icons">
-              <CircleIcon imgUrl={book} title="any cover" />
-              <CircleIcon imgUrl={size} title="any size" />
-              <CircleIcon imgUrl={price} title="from $300" />
+          </Banner>
+          <Banner imageUrl={hiw2} bg="white">
+            <div className="step-content">
+              <div className="step-number">2</div>
+              <div>
+                <h6>After design</h6>
+                <h3>Print a luxury wedding photo book</h3>
+              </div>
+              <div className="step-icons">
+                <CircleIcon imgUrl={book} title="Any cover" />
+                <CircleIcon imgUrl={size} title="Any size" />
+                <CircleIcon imgUrl={price} title="from $300" />
+              </div>
+              <Button link="#" text="Calculate price" size="small" state="transparent" />
             </div>
-            <Button link="#" text="Calculate price" size="small" state="transparent" />
-            <div className="block"></div>
-          </div>
-        </div>
-        <div className="promotion">
-          <div className="promotion-busy">
-            <span>service is busy at</span>
-            <div className="stars">
-              {stars().map((className, id) => (
-                <img src={star} className={className} key={id} />
-              ))}
+          </Banner>
+          <Banner imageUrl={wedBox} bg="white" direction="reverse">
+            <div className="step-content">
+              <div className="step-number">3</div>
+              <div>
+                <h6>Extra Service</h6>
+                <h3>Get Big Wedding Box</h3>
+                <div className="step-info">
+                  <p>put together a box of gifts and gratitude for those you care about</p>
+                  <a href="#" className="link">
+                    on special terms
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <h3 className="promotion-text">{promotionTexts[busyness]}</h3>
-          <div className="promotion-buttons">
-            <Button link="#" text="Book free consultation" size="small" state="transparent" />
-            <Button link="#" text="Order a design" size="small" />
-          </div>
-          <div className="block"></div>
+          </Banner>
         </div>
       </div>
     </section>

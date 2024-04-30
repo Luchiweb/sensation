@@ -9,7 +9,10 @@ register();
 function Reviews() {
   return (
     <section className="reviews-container">
-      <h2>Reviews</h2>
+      <div className="reviews-titles">
+        <h5>We listen</h5>
+        <h2>Reviews</h2>
+      </div>
       <div className="reviews-slider">
         <swiper-container
           style={{

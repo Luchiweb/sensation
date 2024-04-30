@@ -8,12 +8,16 @@
 }
 
 .circle {
-  background-color: var(--main-bg);
+  background-color: var(--secondary-bg);
   width: 60px;
   height: 60px;
   border-radius: 100%;
   position: relative;
   margin: auto;
+}
+
+.circle.white {
+  background-color: var(--main-bg);
 }
 
 .circle img {

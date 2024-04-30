@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.step-number {
+/* .step-number {
   display: grid;
   place-items: center;
   width: 50px;
@@ -17,7 +17,7 @@
   font-size: 24px;
   background-color: var(--main-bg);
   font-family: var(--title-font);
-}
+} */
 
 .extra-info {
   display: flex;

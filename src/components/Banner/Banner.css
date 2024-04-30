@@ -3,13 +3,14 @@
   flex-direction: column-reverse;
   justify-content: space-between;
   width: 100%;
+  position: relative;
 }
 
 .banner-text-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .banner-image {
@@ -17,6 +18,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .banner-text-content.white {
@@ -25,23 +27,28 @@
 
 @media (min-width: 768px) {
   .banner {
-    flex-direction: row;
     min-height: 22rem;
-  }
-
-  .banner-text-content {
-    flex-basis: 50%;
-    width: 80%;
-  }
-
-  .banner-image {
-    flex-basis: 50%;
-    height: auto;
   }
 }
 
 @media (min-width: 1024px) {
   .banner {
+    flex-direction: row;
     min-height: 28.25rem;
+  }
+
+  .banner.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .banner-text-content {
+    flex-basis: 50%;
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .banner-image {
+    flex-basis: 50%;
+    height: auto;
   }
 }

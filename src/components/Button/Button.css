@@ -6,9 +6,7 @@
   font-size: 1.25rem;
   width: fit-content;
   transition: all 0.4s ease;
-}
-
-.button {
+  text-align: center;
   padding: 8px 8px;
   width: 100%;
   max-width: 22rem;
