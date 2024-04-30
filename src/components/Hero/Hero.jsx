@@ -1,6 +1,7 @@
 import './Hero.css';
 
 import videoBG from '../../assets/hero.mp4';
+import scroll from '../../assets/icons/scroll.svg';
 import Button from '../Button/Button';
 
 function Hero() {
@@ -23,6 +24,7 @@ function Hero() {
           </a>
         </div>
       </div>
+      <img className="scroll-icon" src={scroll} alt="scroll" />
     </section>
   );
 }
