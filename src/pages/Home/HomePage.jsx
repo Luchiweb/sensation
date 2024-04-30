@@ -5,6 +5,7 @@ import HowItWorks from '../../components/HowItWorks/HowItWorks';
 import Reviews from '../../components/Reviews/Reviews';
 import Promo from '../../components/Promo/Promo';
 import Footer from '../../components/Footer/Footer';
+import Gifts from '../../components/Gifts/Gifts';
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
       <Hero />
       <BookCollection />
       <HowItWorks />
+      <Gifts />
       <Reviews />
       <Promo />
       <Footer />

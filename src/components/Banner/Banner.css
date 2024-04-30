@@ -34,7 +34,7 @@
 @media (min-width: 1024px) {
   .banner {
     flex-direction: row;
-    min-height: 28.25rem;
+    min-height: 25rem;
   }
 
   .banner.reverse {

@@ -1,0 +1,11 @@
+.gifts-container {
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.gifts-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
