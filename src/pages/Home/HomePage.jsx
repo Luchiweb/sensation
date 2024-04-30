@@ -6,6 +6,7 @@ import Reviews from '../../components/Reviews/Reviews';
 import Promo from '../../components/Promo/Promo';
 import Footer from '../../components/Footer/Footer';
 import Gifts from '../../components/Gifts/Gifts';
+import Shipping from '../../components/Shipping/Shipping';
 
 function HomePage() {
   return (
@@ -15,6 +16,7 @@ function HomePage() {
       <BookCollection />
       <HowItWorks />
       <Gifts />
+      <Shipping />
       <Reviews />
       <Promo />
       <Footer />
